@@ -6,7 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <style>
 
-      body { font-family: 'Exo 2', sans-serif; font-size: 30px; }
+      body { font-family: 'Exo 2', sans-serif; }
+      li { font-size: 30px !important; }
       h1, h2, h3 {
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
@@ -187,9 +188,15 @@ class: center, middle
 
 ---
 
-class: center, middle
+# Причины:
 
-# Zoom. Да именно! Cтареем, зрение хуже, мобильные девайсы.
+- Cтареем, 
+
+- Зрение хуже
+
+- Мобильные девайсы 
+
+- Windows high DPI (aka retina)
 
 ---
 
@@ -424,11 +431,13 @@ class: center, middle
 
 <br><br><br><br>
 
-.center[#[#Кто спал на моем CSS и весь его помял?](http://jsbin.com/qodasag/1/edit?html,css,output)]
+.center[#[#Угадай кто?](http://jsbin.com/qodasag/1/edit?html,css,output)]
 
 ---
 
 #position: fixed - не работает
+
+<br><br><br><br>
 
 ##Input Focus
 ( http://jsbin.com/caxika/edit?html,css,output )
@@ -436,6 +445,8 @@ class: center, middle
 ---
 
 #position: fixed - не работает
+
+<br><br><br><br>
 
 #[#PerfectScrollFix overscroll](https://github.com/aiboy/PerfectScrollFix)
 ( http://jsbin.com/caxika/edit?html,css,output )
@@ -482,11 +493,14 @@ class: center, middle
 
 #position: sticky - не работает
 
+<br><br><br><br>
 
 Нормального polyfill-a по сей день не найдено!
 
 Но из всего что есть самый лучший это
 [#fixed-sticky](https://github.com/filamentgroup/fixed-sticky)
+
+Который не смотря на всю свое крутизну работает не стабильно
 
 ---
 
@@ -496,7 +510,9 @@ class: center, middle
 
 ---
 
-#overflow: scroll - не работает
+#overflow:scroll - не работает
+
+<br><br><br><br>
 
 #[#overflow:scroll](http://jsbin.com/zogidiwagu/1/edit?html,css,output)
 
@@ -519,7 +535,11 @@ class: center, middle
 
 #Эмуляция скролла - не работает
 
-#Остутствует ощущение нативности
+- Остутствует ощущение нативности
+
+- Страдает Accesability
+
+- Очень много ресурсов и времени уходит на оттачивание данных реализаций
 
 ---
 
