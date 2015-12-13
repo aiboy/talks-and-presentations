@@ -7,7 +7,7 @@
     <style>
 
       body { font-family: 'Exo 2', sans-serif; }
-      li { font-size: 30px !important; }
+      li, p { font-size: 30px !important; }
       h1, h2, h3 {
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
@@ -78,7 +78,7 @@ class: center, middle
 class: center, middle
 
 # [#Yandex - Fixed](https://yandex.ru/search/?text=%D0%90%20%D0%BD%D1%83%D0%B6%D0%BD%D0%B8%20%D0%BB%D0%B8%20%D1%84%D0%B8%D0%BA%D1%81%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%3F&lr=213)
-# [#Twitter - Sticky](https://twitter.com/Ai_boy)
+# [#Twitter - Sticky](https://twitter.com/webstandards_ru)
 # [#Stack Menu](http://jsbin.com/noluso/1/edit?html,css,output)
 
 ---
@@ -96,24 +96,6 @@ background-image: url(badcop.png)
 name: badcop
 
 # Ну и зря!
-
----
-
-class: center, middle
-
-#Цель моего доклада
-#сделать так
-#чтобы вам стало
-#очень очень грустно
-
----
-
-class: center, middle
-
-#Чтобы в следующий раз
-#вы даже не брались
-#пробовать фиксировать
-#элементы на экране
 
 ---
 
@@ -184,19 +166,19 @@ class: center, middle
 
 class: center, middle
 
-# Да потому что обычный Zoom может сломать весь ваш сайт
+# Да потому что обычный зум может сломать весь ваш сайт
 
 ---
 
 # Причины:
 
-- Cтареем, 
+- Cтареем,
 
 - Зрение хуже
 
-- Мобильные девайсы 
+- Мобильные девайсы
 
-- Windows high DPI (aka retina)
+- High DPI (aka ретина)
 
 ---
 
@@ -421,9 +403,15 @@ class: center, middle
 
 ---
 
-#position: fixed - не работает
+class: center, middle
+background-image: url(canifixed1.png)
+name: fit
 
-<iframe sandbox="allow-same-origin allow-scripts allow-forms" width="750px" height="400px" src="http://caniuse.com/#feat=css-fixed"></iframe>
+---
+
+class: center, middle
+background-image: url(canifixed2.png)
+name: fit
 
 ---
 
@@ -481,26 +469,32 @@ class: center, middle
 
 - Ведет себя как position:relative а после - как position:fixed
 
-- Любое не стандартное значение overflow, overflow-x, or overflow-y ( не равное visible ) у любого родительского элемента - выключает position:sticky
+- overflow, overflow-x, or overflow-y ( не равное visible ) - выключает position:sticky
+
+---
+
+class: center, middle
+background-image: url(canisticky1.png)
+name: fit
+
+---
+
+class: center, middle
+background-image: url(canisticky2.png)
+name: fit
 
 ---
 
 #position: sticky - не работает
 
-<iframe sandbox="allow-same-origin allow-scripts allow-forms" width="750px" height="400px" src="http://caniuse.com/#feat=css-sticky"></iframe>
-
----
-
-#position: sticky - не работает
-
-<br><br><br><br>
+<br><br><br>
 
 Нормального polyfill-a по сей день не найдено!
 
 Но из всего что есть самый лучший это
 [#fixed-sticky](https://github.com/filamentgroup/fixed-sticky)
 
-Который не смотря на всю свое крутизну работает не стабильно
+Который не смотря на всю свое крутизну работает не стабильно и требует невозможного! ( jQuery )
 
 ---
 
@@ -515,6 +509,26 @@ class: center, middle
 <br><br><br><br>
 
 #[#overflow:scroll](http://jsbin.com/zogidiwagu/1/edit?html,css,output)
+
+---
+
+#overflow:scroll - не работает
+
+<br><br><br><br>
+
+ -webkit-overflow-scrolling: touch
+
+---
+
+#[Elastic scroll problem](http://browser.colla.me/show/disable_elastic_scroll_on_iOS_safari)
+
+![Default-aligned image](autoios1.gif)
+
+---
+
+#[Elastic scroll problem](http://browser.colla.me/show/disable_elastic_scroll_on_iOS_safari)
+
+![Default-aligned image](autoios2.gif)
 
 ---
 
